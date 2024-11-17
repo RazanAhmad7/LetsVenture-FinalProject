@@ -1,0 +1,66 @@
+﻿body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image: url('/assets/backgroundImage.jpeg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form {
+    height: 70vh;
+    width: 100%;
+}
+
+.form-container {
+    padding: 25px;
+    width: 75%;
+    box-shadow: 0px 0px 3px #FF6600;
+}
+
+label {
+    font-weight: bold;
+    color: rgb(78, 78, 78);
+    margin-bottom: 3px;
+}
+
+.paragraph {
+    width: 100%;
+    border-bottom: 1px solid rgb(143, 138, 138);
+    font-size: 14px;
+}
+
+.form-container div input {
+    height: 35px;
+    margin-bottom: 7px;
+}
+
+input, textarea {
+    width: 100%;
+    border: 1px solid rgb(193, 188, 188);
+    border-radius: 4px;
+}
+
+
+
+@media (max-width: 800px) {
+    body {
+        background-image: none;
+    }
+
+    form {
+        height: 70vh;
+        width: 100%;
+    }
+
+    .form-container {
+        margin: 0;
+        padding: 15px;
+        width: 100%;
+        box-shadow: 0px 0px 3px #FF6600;
+    }
+}

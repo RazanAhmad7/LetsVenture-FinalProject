@@ -1,0 +1,304 @@
+﻿
+@model LetsVen.ViewModels.AdventureDashModel
+@{
+    Layout = null;
+}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/GroupDashboard.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="group-info">
+            <img src="@Model.groupUser.ProfilePicUrl" alt="Logo" width="125" class="rounded-circle" />
+            <h5 class="mt-2 w-100"></h5>
+            <p>@Model.groupUser.Email</p>
+        </div>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link active" href="@Url.Action("Index","Home")">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="@Url.Action("GroupProfile","Users", new{id=Model.groupUser.Id})">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="@Url.Action("Index","Adventures")">Adventures</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="@Url.Action("AddAdventure","Dash")">Add Adventures</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Settings</a>
+            </li> -->
+        </ul>
+    </div>
+
+
+
+    <!-- Main content -->
+    <div class="content">
+        <div class="container">
+
+            <div class="container mt-4">
+                <h3>Please choose the language of the form:</h3>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="languageOption" id="englishOption" value="english" checked>
+                    <label class="form-check-label" for="englishOption">English</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="languageOption" id="arabicOption" value="arabic">
+                    <label class="form-check-label" for="arabicOption">العربية</label>
+                </div>
+            </div>
+
+            <hr>
+
+            <h2 id="englishTitle">Add New Adventure </h2>
+            <div class="add-form">
+                <form asp-action="Create" asp-controller="Adventures" method="post" enctype="multipart/form-data" id="englishForm">
+                    <input type="hidden" asp-for="oneAdventure.UserId" name="userID" value="@Model.groupUser.Id" />
+                    <input type="hidden" asp-for="oneAdventure.GroupUser" name="groupUser" value="@Model.groupUser" />
+                    <!-- English Adventure Form -->
+                    <!-- Adventure Description -->
+                    <div class="mb-3">
+                        <label for="adventureDescription" class="form-label">Adventure Description (English)</label>
+                        <textarea asp-for="oneAdventure.Description"  class="form-control" id="adventureDescription" rows="4" placeholder="Enter full description of the adventure" required></textarea>
+                    </div>
+                    <!-- Adventure Title -->
+                    <div class="mb-3">
+                        <label for="adventureTitle" class="form-label">Adventure Title (English)</label>
+                        <input asp-for="oneAdventure.Title" type="text" class="form-control" id="adventureTitle" required>
+                    </div>
+                    <!-- Start Date -->
+                    <div class="mb-3">
+                        <label for="startDate" class="form-label">Start Date</label>
+                        <input asp-for="oneAdventure.StartDate" type="date" class="form-control" id="startDate" required>
+                    </div>
+                    <!-- End Date -->
+                    <div class="mb-3">
+                        <label for="endDate" class="form-label">End Date</label>
+                        <input asp-for="oneAdventure.EndDate" type="date" class="form-control" id="endDate" required>
+                    </div>
+                    <!-- Start Time -->
+                    <div class="mb-3">
+                        <label for="startTime" class="form-label">Start Time</label>
+                        <input asp-for="oneAdventure.StartTime" type="time" class="form-control" id="startTime" required>
+                    </div>
+                    <!-- End Time -->
+                    <div class="mb-3">
+                        <label for="endTime" class="form-label">End Time</label>
+                        <input asp-for="oneAdventure.EndTime" type="time" class="form-control" id="endTime" required>
+                    </div>
+                    <!-- Price -->
+                    <div class="mb-3">
+                        <label for="price" class="form-label">Price</label>
+                        <input asp-for="oneAdventure.Price" type="number" class="form-control" id="price" required>
+                    </div>
+                    <!-- City -->
+                    <div class="mb-3">
+                        <label for="city" class="form-label">City</label>
+                        <select asp-for="oneAdventure.City" class="form-select" id="city" required>
+                            <option selected disabled value="">Select a City</option>
+                            <option value="Amman">Amman</option>
+                            <option value="Irbid">Irbid</option>
+                            <option value="Zarqa">Zarqa</option>
+                            <option value="Aqaba">Aqaba</option>
+                            <option value="Jerash">Jerash</option>
+                            <option value="Madaba">Madaba</option>
+                            <option value="Salt">Salt</option>
+                            <option value="Ma'an">Ma'an</option>
+                            <option value="Ajloun">Ajloun</option>
+                            <option value="Tafilah">Tafilah</option>
+                            <option value="Mafraq">Mafraq</option>
+                            <option value="Karak">Karak</option>
+                        </select>
+                    </div>
+                    <!-- Location -->
+                    <div class="mb-3">
+                        <label for="location" class="form-label">Location (English)</label>
+                        <input asp-for="oneAdventure.Location" type="text" class="form-control" id="location" required>
+                    </div>
+                    <!-- Status -->
+                    <div class="mb-3">
+                        <label for="status" class="form-label">Status</label>
+                        <select asp-for="oneAdventure.Status" class="form-select" id="status" required>
+                            <option selected disabled value="">Choose status</option>
+                            <option value="Booked">booked</option>
+                            <option value="In-progress">In Progress</option>
+                            <option value="Published">Published</option>
+                            <option value="Cancelled">Cancelled</option>
+                            <option value="Completed">Completed</option>
+                        </select>
+                    </div>
+                    <!-- Maximum Participants -->
+                    <div class="mb-3">
+                        <label for="maxPeople" class="form-label">Maximum Number of People</label>
+                        <input asp-for="oneAdventure.MaxNumOfPeople" type="number" class="form-control" id="maxPeople" required>
+                    </div>
+                    <!-- Food Availability -->
+                    <div class="mb-3">
+                        <label for="foodAvailability" class="form-label">Food Availability</label>
+                        <select asp-for="oneAdventure.FoodAvailability" class="form-select" id="foodAvailability" required>
+                            <option selected disabled value="">Select food option</option>
+                            <option value="Available">Available</option>
+                            <option value="Not Available">Not Available</option>
+                        </select>
+                    </div>
+                    <!-- Difficulty Level -->
+                    <div class="mb-3">
+                        <label for="difficultyLevel" class="form-label">Difficulty Level</label>
+                        <select asp-for="oneAdventure.DifficultyLevel" class="form-select" id="difficultyLevel" required>
+                            <option selected disabled value="">Choose difficulty</option>
+                            <option value="Easy">Easy</option>
+                            <option value="Intermediate">Intermediate</option>
+                            <option value="Hard">Hard</option>
+                        </select>
+                    </div>
+                    <!-- Temperature Degree -->
+                    <div class="mb-3">
+                        <label for="temperature" class="form-label">Temperature on the Day</label>
+                        <input asp-for="oneAdventure.TempretrueDegree" type="number" class="form-control" id="temperature" required>
+                    </div>
+
+                    <!-- Image Upload -->
+                    <div class="mb-3">
+                        <label for="adventureImages" class="form-label">Upload Images</label>
+                        <input asp-for="UploadedImages" type="file" class="form-control" id="adventureImages" name="UploadedImages" multiple accept="image/*">
+                    </div>
+                    
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+
+
+
+            <!-- Arabic Version of the Form -->
+            <h2 id="arabicTitle">إضافة مغامرة جديدة</h2>
+            <div class="add-form">
+                <form id="arabicForm">
+                    <!-- Adventure Description (Arabic) -->
+                    <div class="mb-3">
+                        <label for="adventureDescriptionArabic" class="form-label">وصف المغامرة (بالعربية)</label>
+                        <textarea class="form-control" id="adventureDescriptionArabic" rows="4" placeholder="أدخل الوصف الكامل للمغامرة" required></textarea>
+                    </div>
+                    <!-- Adventure Title (Arabic) -->
+                    <div class="mb-3">
+                        <label for="adventureTitleArabic" class="form-label">عنوان المغامرة (بالعربية)</label>
+                        <input type="text" class="form-control" id="adventureTitleArabic" required>
+                    </div>
+                    <!-- Start Date (Arabic) -->
+                    <div class="mb-3">
+                        <label for="startDateArabic" class="form-label">تاريخ البدء</label>
+                        <input type="date" class="form-control" id="startDateArabic" required>
+                    </div>
+                    <!-- End Date (Arabic) -->
+                    <div class="mb-3">
+                        <label for="endDateArabic" class="form-label">تاريخ الانتهاء</label>
+                        <input type="date" class="form-control" id="endDateArabic" required>
+                    </div>
+                    <!-- Start Time (Arabic) -->
+                    <div class="mb-3">
+                        <label for="startTimeArabic" class="form-label">وقت البدء</label>
+                        <input type="time" class="form-control" id="startTimeArabic" required>
+                    </div>
+                    <!-- End Time (Arabic) -->
+                    <div class="mb-3">
+                        <label for="endTimeArabic" class="form-label">وقت الانتهاء</label>
+                        <input type="time" class="form-control" id="endTimeArabic" required>
+                    </div>
+                    <!-- Price (Arabic) -->
+                    <div class="mb-3">
+                        <label for="priceArabic" class="form-label">السعر</label>
+                        <input type="number" class="form-control" id="priceArabic" required>
+                    </div>
+                    <!-- City (Arabic) -->
+                    <div class="mb-3">
+                        <label for="cityArabic" class="form-label">المدينة</label>
+                        <select class="form-select" id="cityArabic" required>
+                            <option selected disabled value="">اختر مدينة</option>
+                            <option value="Amman">عمان</option>
+                            <option value="Irbid">إربد</option>
+                            <option value="Zarqa">الزرقاء</option>
+                            <option value="Aqaba">العقبة</option>
+                            <option value="Jerash">جرش</option>
+                            <option value="Madaba">مادبا</option>
+                            <option value="Salt">السلط</option>
+                            <option value="Ma'an">معان</option>
+                            <option value="Ajloun">عجلون</option>
+                            <option value="Tafilah">الطفيلة</option>
+                            <option value="Mafraq">المفرق</option>
+                            <option value="Karak">الكرك</option>
+                        </select>
+                    </div>
+                    <!-- Location (Arabic) -->
+                    <div class="mb-3">
+                        <label for="locationArabic" class="form-label">الموقع (بالعربية)</label>
+                        <input type="text" class="form-control" id="locationArabic" required>
+                    </div>
+                    <!-- Status (Arabic) -->
+                    <div class="mb-3">
+                        <label for="statusArabic" class="form-label">الحالة</label>
+                        <select class="form-select" id="statusArabic" required>
+                            <option selected disabled value="">اختر الحالة</option>
+                            <option value="Booked">محجوز</option>
+                            <option value="Pending">قيد الانتظار</option>
+                            <option value="Cancelled">ملغى</option>
+                            <option value="Completed">مكتمل</option>
+                        </select>
+                    </div>
+                    <!-- Maximum Participants (Arabic) -->
+                    <div class="mb-3">
+                        <label for="maxPeopleArabic" class="form-label">أقصى عدد من المشاركين</label>
+                        <input type="number" class="form-control" id="maxPeopleArabic" required>
+                    </div>
+                    <!-- Food Availability (Arabic) -->
+                    <div class="mb-3">
+                        <label for="foodAvailabilityArabic" class="form-label">توفر الطعام</label>
+                        <select class="form-select" id="foodAvailabilityArabic" required>
+                            <option selected disabled value="">اختر</option>
+                            <option value="Available">متوفر</option>
+                            <option value="Not Available">غير متوفر</option>
+                        </select>
+                    </div>
+                    <!-- Difficulty Level (Arabic) -->
+                    <div class="mb-3">
+                        <label for="difficultyLevelArabic" class="form-label">مستوى الصعوبة</label>
+                        <select class="form-select" id="difficultyLevelArabic" required>
+                            <option selected disabled value="">اختر المستوى</option>
+                            <option value="Easy">سهل</option>
+                            <option value="Intermediate">متوسط</option>
+                            <option value="Hard">صعب</option>
+                        </select>
+                    </div>
+                    <!-- Temperature Degree (Arabic) -->
+                    <div class="mb-3">
+                        <label for="temperatureArabic" class="form-label">درجة الحرارة في اليوم</label>
+                        <input type="number" class="form-control" id="temperatureArabic" required>
+                    </div>
+
+                    <!-- Image Upload (Arabic) -->
+                    <div class="mb-3">
+                        <label for="adventureImagesArabic" class="form-label">رفع الصور</label>
+                        <input type="file" class="form-control" id="adventureImagesArabic" name="adventureImagesArabic" accept="image/*" multiple required>
+                    </div>
+
+                    <!-- Submit Button (Arabic) -->
+                    <button type="submit" class="btn btn-primary">إرسال</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

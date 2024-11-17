@@ -1,0 +1,30 @@
+﻿.main-container {
+    margin-top: 105px;
+    margin-bottom: 55px;
+}
+
+.numOfAdventures-favorite a {
+    color: #416D19;
+}
+
+.container p {
+    color: #1A2F07;
+}
+
+.filter-buttons .row {
+    border-bottom: 1px solid lightgray;
+    margin: 0;
+    padding: 0;
+}
+
+    .filter-buttons .row button {
+        margin: 0;
+        border-radius: 10px 10px 0px 0px;
+        border: none;
+        color: #1A2F07;
+        font-size: 22px;
+    }
+
+        .filter-buttons .row button.active {
+            background-color: #F5F5F5;
+        }

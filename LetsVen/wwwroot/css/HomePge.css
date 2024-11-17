@@ -1,0 +1,240 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.custom-navbar {
+    color: #ff6600;
+}
+
+.navbar {
+    z-index: 1030; /* Ensure the navbar stays above other content */
+}
+
+.login-button {
+    border: 1px solid #FF9147;
+    color: #FF9147;
+}
+
+.signUp-button {
+    background-color: #FF6600;
+    color: white;
+}
+
+.main-color {
+    color: #416D19;
+}
+
+.img-container {
+    background-image: url('/assets/backgroundImage.jpeg');
+    background-size: cover;
+    width:100%;
+    height: 95vh;
+}
+
+    .img-container span {
+        color: #FF6600;
+    }
+
+    .img-container h1 {
+        color: #1A2F07;
+        font-size: 3.2em;
+        margin-left: 30px;
+    }
+
+    .img-container p {
+        margin-left: 30px;
+        color: black;
+    }
+
+    .img-container a {
+        background-color: #ff6600;
+        color: white;
+        border-radius: 30px;
+        margin-left: 30px;
+    }
+
+        .img-container a:hover {
+            border: 1px solid #ffffff;
+            color: #ffffff;
+        }
+
+
+/* Container 44 */
+/* .card {
+
+background: #FFFFFF;
+box-shadow: 0px 0px 2px rgba(23, 26, 31, 0.12), 0px 2px 5px rgba(23, 26, 31, 0.09);
+border-radius: 16px;
+}
+*/
+.card button {
+    background-color: #ffffff;
+    color: #FF6600;
+    border: 1px solid #FF6600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+
+    .card button:hover {
+        background-color: #FF6600;
+        color: #ffffff;
+    }
+
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for cards */
+    transition: transform 0.3s ease-in-out;
+}
+
+    .card:hover {
+        transform: translateY(-10px); /* Adds a hover effect */
+    }
+
+    .card img {
+        height: 200px; /* Set a fixed height for card images */
+        object-fit: cover; /* Ensures images fit well */
+    }
+
+.card-body {
+    text-align: left;
+}
+
+.price {
+    font-weight: bold;
+    color: green;
+}
+
+.overflow-auto {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto; /* Enable horizontal scrolling for cards */
+    padding: 10px 0;
+}
+
+    .overflow-auto::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for a cleaner look */
+    }
+
+.title-buttons button {
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #416D19;
+    padding: 10px;
+    color: #416D19;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+    .title-buttons button:hover {
+        background-color: #FF6600;
+        border: none;
+        color: white;
+    }
+
+.clubs a {
+    color: #416D19;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+    .clubs a img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+.joinUs-container div i {
+    font-size: 50px;
+    color: #ff6600;
+}
+
+.joinUs-container a {
+    border: 1px solid #ff6600;
+    color: #ff6600;
+    border-radius: 30px;
+}
+
+    .joinUs-container a:hover {
+        background-color: #ff6600;
+        color: white;
+        border: none;
+    }
+
+.footer-cont {
+    border-top: 1px solid #1A2F07;
+}
+
+footer input {
+    border: 1px solid #FF6600;
+    padding: 8px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+
+    footer input:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(255, 102, 0, 0.5);
+    }
+
+footer p {
+    color: #1A2F07;
+    font-size: 14px;
+}
+
+.quick-links p, .contact-info p, .follow-us p {
+    color: #FF6600;
+    font-weight: bold;
+}
+
+.quick-links a, .contact-info a, .follow-us a {
+    color: #1A2F07;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+
+.main-buttons-style {
+    background-color: #FF6600;
+    color: white;
+}
+
+    .main-buttons-style:hover {
+        background-color: white;
+        color: #FF6600;
+        border: 1px solid #FF6600;
+    }
+
+.secondary-buttons-style {
+    background-color: white;
+    color: #FF6600;
+    border: 1px solid #FF6600;
+}
+
+    .secondary-buttons-style:hover {
+        background-color: #ff6600;
+        color: white;
+        border: none;
+    }
+
+@media (max-width: 700px) {
+    footer {
+        flex-wrap: wrap;
+    }
+
+    .clubs a img {
+        width: 150px;
+        height: 150px;
+    }
+}

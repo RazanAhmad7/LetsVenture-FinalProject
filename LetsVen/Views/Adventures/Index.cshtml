@@ -1,0 +1,233 @@
+﻿@model IEnumerable<Adventure>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventures </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+          rel="stylesheet" />
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/css/HomePge.css">
+    <link rel="stylesheet" href="/AdventuresPage/style.css">
+    <style>
+        .card {
+          max-width: 500px;
+          margin: 20px;
+          border-radius: 10px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+          min-height: 400px;
+        }
+
+
+        .main-container {
+            margin-top: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="navbar">
+    </div>
+
+    <div class="main-container container">
+        <div class="row ">
+            <div class="col-sm-7">
+                <h1>Ready to embark on your next adventure in Jordan? </h1>
+                <p class="fs-4">
+                    letsVenture connects you to thrilling local experiences and unique
+                    journeys across the country's stunning landscapes. Discover and book
+                    unforgettable moments — all in one place.
+                </p>
+                <div class="row">
+                    <!-- Select dropdown for Jordan cities -->
+                    <div class="col-5">
+                        <select id="citySelect" class="form-control" style="border-color: #ff6600">
+                            <option selected disabled value="">Search by City .. </option>
+                            <option value="All">All</option>
+                            <option value="Amman">Amman</option>
+                            <option value="Irbid">Irbid</option>
+                            <option value="Zarqa">Zarqa</option>
+                            <option value="Aqaba">Aqaba</option>
+                            <option value="Jerash">Jerash</option>
+                            <option value="Madaba">Madaba</option>
+                            <option value="Salt">Salt</option>
+                            <option value="Ma'an">Ma'an</option>
+                            <option value="Ajloun">Ajloun</option>
+                            <option value="Tafilah">Tafilah</option>
+                            <option value="Mafraq">Mafraq</option>
+                            <option value="Karak">Karak</option>
+                        </select>
+                    </div>
+                    <!-- Date input field -->
+                    <div class="col-5">
+                        <input id="dateSelect"
+                               onchange="searchByDate()"
+                               type="date"
+                               class="form-control"
+                               min="@DateTime.Now.ToString("yyyy-MM-dd")"
+                               placeholder="Select a date"
+                               style="border-color: #ff6600" />
+                    </div>
+                    <div class="col-10 ">
+                        <a href="#adventuresSection" class="btn w-100  mt-3 mb-5 main-buttons-style">Explore all Adventures Now!</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-5 d-flex justify-content-center align-items-center">
+                <img src="/assets/image.png" alt="" style="width: 70%; height: 350px;">
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <div class="container adventuresSection mt-3">
+        <div id="adventuresSection" class="justify-content-between align-items-center ">
+            <div class="row">
+                <!-- Start a Bootstrap row -->
+                <!-- Cards -->
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-4 adventure-item" data-city="@item.City" data-date="@item.StartDate">
+                        <div class="card  mx-2" style="min-width: 18rem">
+                            <img src="@item.MainImagePath" class="card-img-top" alt="Wadi Rum Adventure" />
+                            <div class="card-body">
+                                <p class="text-muted">@item.StartDate.ToString("MMMM dd, yyyy")</p>
+                                <h4 class="card-title">@item.Title</h4>
+                                <p class="price">@item.Price JD</p>
+                                <div class="d-flex justify-content-start pt-2">
+                                    <form asp-action="Details" asp-controller="Adventures" asp-route-id="@item.Id">
+                                        <button type="submit" class="btn">Read More</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                <div id="noAdventuresMessage" class="text-center mt-4" style="display: none;">
+                    <h4 class="text-muted">No adventures available for the selected city.</h4>
+                </div>
+
+                <div id="noAdventuresMessage" class="text-center mt-4" style="display: none;">
+                    <h4 class="text-muted">No adventures available for the selected date.</h4>
+                </div>
+
+
+
+
+
+
+            </div>
+            <!-- Additional rows can be added here -->
+        </div>
+
+        <div class="container my-5">
+            <div class="title-buttons d-flex justify-content-center">
+                <div class="left-right-buttons d-flex flex-row">
+                    <button id="btn"
+                            class="rounded-circle m-2"
+                            style="width: 50px; height: 50px">
+                        <i class="bi bi-arrow-left-short fs-1"></i>
+                    </button>
+                    <button id="btn"
+                            class="rounded-circle m-2 fs-4"
+                            style="width: 50px; height: 50px">
+                        1
+                    </button>
+                    <button id="btn"
+                            class="rounded-circle m-2 fs-4"
+                            style="width: 50px; height: 50px">
+                        2
+                    </button>
+
+                    <button id="btn"
+                            class="rounded-circle m-2 fs-4"
+                            style="width: 50px; height: 50px">
+                        3
+                    </button>
+
+                    <button id="btn"
+                            class="rounded-circle m-2"
+                            style="width: 50px; height: 50px">
+                        <i class="bi bi-arrow-right-short fs-1"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const citySelect = document.getElementById('citySelect');
+            const noAdventuresMessage = document.getElementById('noAdventuresMessage');
+
+            citySelect.addEventListener('change', (event) => {
+                const selectedCity = event.target.value;
+                searchByCity(selectedCity);
+            });
+        });
+
+        function searchByCity(city) {
+            const allAdventures = document.querySelectorAll('.adventure-item');
+            let hasVisibleAdventures = false;
+
+            allAdventures.forEach(adventure => {
+                if (city === 'All' || adventure.dataset.city === city) {
+                    adventure.style.display = 'block';
+                    hasVisibleAdventures = true;
+                } else {
+                    adventure.style.display = 'none';
+                }
+            });
+
+            // Show or hide the "No adventures available" message
+            if (hasVisibleAdventures) {
+                document.getElementById('noAdventuresMessage').style.display = 'none';
+            } else {
+                document.getElementById('noAdventuresMessage').style.display = 'block';
+            }
+        }
+
+        function searchByDate() {
+            const selectedDate = document.getElementById('dateSelect').value; // "2024-11-18"
+            const allAdventures = document.querySelectorAll('.adventure-item');
+
+            // Loop through each adventure item
+            allAdventures.forEach(adventure => {
+                // Parse the stored date (e.g., "11/17/2024 12:00:00 AM")
+                const adventureDate = new Date(adventure.dataset.date);
+                // Convert the adventure date to 'YYYY-MM-DD' format
+                const adventureDateString = adventureDate.toISOString().split('T')[0]; // "2024-11-17"
+                console.log(adventureDateString);
+                console.log(selectedDate);
+                // Compare the selected date with the formatted stored date
+                if (selectedDate === adventureDateString) {
+                    adventure.style.display = 'block';
+                } else {
+                    adventure.style.display = 'none';
+                }
+            });
+        }
+
+    </script>
+
+
+</body>
+</html>
+
+<!--
+<a asp-action="Edit" asp-route-id="item.Id">Edit</a> |
+<a asp-action="Details" asp-route-id="item.Id">Details</a> |
+<a asp-action="Delete" asp-route-id="item.Id">Delete</a>
+-->

@@ -1,0 +1,188 @@
+﻿@model AppUser
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+          rel="stylesheet" />
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/css/HomePge.css">
+    <link rel="stylesheet" href="/css/GroupProfile.css">
+    <style>
+        #keyFeaturesSection, #adventuresSection, #reviewsSection {
+              display: none; /* Initially hide all sections */
+          }
+
+
+        .main-container {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+    </div>
+
+    <div class="container main-container ">
+        <h3 class="mb-4">@Model.Name</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="@Model.ProfilePicUrl" alt="Logo" class="rounded-circle " style="object-fit: cover; width: 90%; height: 220px;" />
+            </div>
+            <div class="col-md-8">
+                <p class="pt-2">@Model.Bio Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur laborum laudantium sunt sed optio, tempore amet facere natus fugit! Eum deserunt eaque, dicta dolorum sit illum quas quae sed quisquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti provident sit consequatur nostrum cumque rem vero quisquam cupiditate voluptas sed numquam ullam possimus ea eos tempora quaerat, id tempore debitis.</p>
+                <br>
+                <br>
+                <div class="numOfAdventures-favorite">
+                    <a href="#adventuresSection" class="btn">+@Model.Adventures.Count Adventures</a>
+                    <button type="button" class="btn secondary-buttons-style">Add to Favorites</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container filter-buttons mt-5 mb-3">
+        <div class="row">
+            <div class="col-auto p-0">
+                <button id="adventuresBtn" class="filter-btn btn active">Adventures</button>
+            </div>
+            <div class="col-auto">
+                <button id="reviewsBtn" class="filter-btn btn">Reviews</button>
+            </div>
+            <div class="col-auto">
+                <button id="keyFeaturesBtn" class="filter-btn btn">Key Features</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container adventuresSection">
+        <div id="adventuresSection" class="justify-content-between align-items-center py-3">
+            <div class="row">
+                <!-- Start a Bootstrap row -->
+                <!-- Card 1 -->
+                @foreach (var item in Model.Adventures)
+                {
+                    <div class="col-md-4 mb-4">
+                        <div class="card mx-2" style="min-width: 18rem">
+                            <img src="@item.MainImagePath" class="card-img-top" alt="Wadi Rum Adventure" />
+                            <div class="card-body">
+                                <p class="text-muted">@item.StartDate.ToString("MMMM dd, yyyy")</p>
+                                <h4 class="card-title">@item.Title</h4>
+                                <p class="price">@item.Price JOD</p>
+                                <div class="d-flex justify-content-start pt-2">
+                                    <form asp-action="Details" asp-controller="Adventures" asp-route-id="@item.Id">
+                                        <button type="submit" class="btn">Read More</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+
+
+
+            </div>
+            <!-- Additional rows can be added here -->
+        </div>
+    </div>
+
+    <div class="container keyFeaturesSection">
+        <div id="keyFeaturesSection" class="row justify-content-center  py-5">
+            <div class="col-md-4 text-center">
+                <i class="bi bi-camera-fill" style="font-size: 2rem;"></i>
+                <h4 class="fw-bold mt-3">Adventure Photography</h4>
+                <p>Enjoy professionally captured memories with a dedicated photographer on every adventure.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="bi bi-gear-fill" style="font-size: 2rem;"></i>
+                <h4 class="fw-bold mt-3">Exclusive Gear Access</h4>
+                <p>Get access to premium outdoor gear and equipment as part of our group benefits.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="bi bi-award-fill" style="font-size: 2rem;"></i>
+                <h4 class="fw-bold mt-3">Expert Guides</h4>
+                <p>Join adventures led by certified guides with local expertise and adventure experience.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- New Reviews Section -->
+    <div class="container reviewsSection">
+        <div id="reviewsSection" class="text-center  py-5">
+            <h2>Reviews</h2>
+            <p>This section is under construction and is not ready yet.</p>
+        </div>
+    </div>
+
+
+
+    <div id="myFooter">
+    </div>
+    <script>
+
+        fetch('../Components/navbar.html').then((response) => response.text()).then(data => {
+            document.getElementById("navbar").innerHTML = data;
+        }
+        );
+
+
+        fetch('../Components/footer.html').then((response) => response.text()).then(data => {
+            document.getElementById("myFooter").innerHTML = data;
+        }
+        );
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const buttons = document.querySelectorAll('.filter-btn');
+            const keyFeaturesSection = document.getElementById('keyFeaturesSection');
+            const adventuresSection = document.getElementById('adventuresSection');
+            const reviewsSection = document.getElementById('reviewsSection');
+
+            // Initially show the adventures section
+            adventuresSection.style.display = 'flex';
+
+            // Function to show a section and hide the others
+            function showSection(sectionToShow) {
+                adventuresSection.style.display = 'none';
+                keyFeaturesSection.style.display = 'none';
+                reviewsSection.style.display = 'none';
+
+                if (sectionToShow === 'adventures') {
+                    adventuresSection.style.display = 'flex'; // Show Adventures
+                } else if (sectionToShow === 'keyFeatures') {
+                    keyFeaturesSection.style.display = 'flex'; // Show Key Features
+                } else if (sectionToShow === 'reviews') {
+                    reviewsSection.style.display = 'block'; // Show Reviews
+                }
+            }
+
+            // Loop through all buttons and add event listeners
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    buttons.forEach(btn => btn.classList.remove('active'));
+
+                    // Add active class to the clicked button
+                    button.classList.add('active');
+
+                    // Show the relevant section
+                    if (button.id === 'adventuresBtn') {
+                        showSection('adventures'); // Show Adventures
+                    } else if (button.id === 'keyFeaturesBtn') {
+                        showSection('keyFeatures'); // Show Key Features
+                    } else if (button.id === 'reviewsBtn') {
+                        showSection('reviews'); // Show Reviews
+                    }
+                });
+            });
+        });
+
+
+
+
+    </script>
+</body>
+</html>

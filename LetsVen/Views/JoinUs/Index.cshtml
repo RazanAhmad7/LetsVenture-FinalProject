@@ -1,0 +1,54 @@
+﻿@{
+    Layout = null;
+}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us</title>
+    <link rel="stylesheet" href="/css/joinUs.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+</head>
+<body>
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+        <div class="form-container rounded bg-white d-flex flex-column align-items-start">
+            <p class="text-dark fs-2 pb-0 mb-0">Join Our Network!</p>
+            <p class="text-muted paragraph">We will be happy working with you! please submit your details and we will contact you as soon as possible.</p>
+            <form class="d-flex flex-column justify-content-center align-items-center">
+                <div style="width: 100%;">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <div class="flex-row d-flex gap-4">
+                            <input type="text" id="firstName">
+                            <input type="text" id="lastName">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="club">Your Club Name:</label>
+                        <input type="text" id="club">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="number" id="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Your Message:</label>
+                        <br>
+                        <textarea name="message" id="message" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary mt-1" type="submit">Submit</button>
+            </form>
+
+        </div>
+
+    </div>
+</body>
+</html>

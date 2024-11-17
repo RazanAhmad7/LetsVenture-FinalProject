@@ -1,0 +1,209 @@
+﻿@model LetsVen.ViewModels.AdventureDashModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+          rel="stylesheet" />
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+
+    <link rel="stylesheet" href="/DetailsPage/style.css">
+    <link rel="stylesheet" href="/css/Dashboard.css">
+
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="group-info">
+            <img src="@Model.groupUser.ProfilePicUrl" alt="Logo" width="125" class="rounded-circle" />
+            <h5 class="mt-2 w-100"></h5>
+            <p>@Model.groupUser.Email</p>
+        </div>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link active" href="@Url.Action("Index","Home")">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="@Url.Action("GroupProfile","Users", new{id=Model.groupUser.Id})">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="@Url.Action("Index","Adventures")">Adventures</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="@Url.Action("AddAdventure","Dash")">Add Adventures</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Settings</a>
+            </li> -->
+        </ul>
+    </div>
+
+    <!-- Main content -->
+    <div class="content ">
+        <div class="container ">
+            <h2>@Model.groupUser.Name's Dashboard</h2>
+            <div class="cards d-flex flex-row justify-content-around align-items-center mt-3 pb-3">
+                <div class="card p-3 ">
+                    <h5 class="card-title">Total adventures</h5>
+                    <p class="card-text">@Model.groupUser.Adventures.Count</p>
+                </div>
+                <div class="card p-3">
+                    <h5 class="card-title">Total Sales</h5>
+                    <p class="card-text">25</p>
+                </div>
+                <div class="card p-3">
+                    <h5 class="card-title">Current adventures</h5>
+                    <p class="card-text">25</p>
+                </div>
+                <div class="card p-3">
+                    <h5 class="card-title">Booked adventures</h5>
+                    <p class="card-text">5</p>
+                </div>
+            </div>
+
+            <div class="search-div row px-2">
+                <form class="d-flex flex-row align-items-center justify-content-around py-3 gap-4">
+                    <input type="text" class="form-control" placeholder="Search for adventures...">
+                    <input type="date" class="form-control">
+                </form>
+            </div>
+            <a href="@Url.Action("AddAdventure","Dash", new{User = Model.groupUser})" class="btn btn-success mb-3" >
+                Add New Adventure
+            </a>
+
+            <div class="btn-group py-2 d-flex flex-row justify-content-around" role="group" aria-label="Basic example">
+                <button type="button" class="btn main-buttons-style clicked" onclick="filterAdventures('all')">All</button>
+                <button type="button" class="btn main-buttons-style" onclick="filterAdventures('in-progress')">In Progress</button>
+                <button type="button" class="btn main-buttons-style" onclick="filterAdventures('published')">Published</button>
+                <button type="button" class="btn main-buttons-style" onclick="filterAdventures('booked')">Booked</button>
+                <button type="button" class="btn main-buttons-style" onclick="filterAdventures('completed')">Completed</button>
+                <button type="button" class="btn main-buttons-style" onclick="filterAdventures('cancelled')">Cancelled</button>
+            </div>
+
+
+            <div class="table-responsive py-3">
+                <table class="table table-striped table-bordered table align-middle">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Adventures)
+                        {
+                            <tr id="adv-row-@item.Id" class="adventure-item" data-status="@item.Status.ToLower()">
+                                <th scope="row">@item.Id</th>
+                                <td>@item.Title</td>
+                                <td>@item.StartDate.ToString("MMMM dd, yyyy")</td>
+                                <td>@item.Location</td>
+                                <td>@item.Price JOD</td>
+                                <td><span class="badge bg-success">@item.Status</span></td>
+                                <td>
+                                    <button class="btn btn-outline-danger" type="button" onclick="editAdventure('@item.Id')">Delete</button>
+                                    <button class="btn btn-outline-danger" type="button" onclick="deleteAdventure('@item.Id')">Delete</button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function filterAdventures(status) {
+            const allAdventures = document.querySelectorAll('.adventure-item');
+            allAdventures.forEach(adventure => {
+                if (status === 'all' || adventure.dataset.status === status) {
+                    adventure.style.display = 'table-row'; // Use 'table-row' for <tr> elements
+                } else {
+                    adventure.style.display = 'none';
+                }
+            });
+        }
+
+        
+
+
+        function deleteAdventure(advId) {
+            // Show SweetAlert confirmation dialog
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "Do you really want to delete this adventure? This action cannot be undone.",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Proceed with AJAX request if confirmed
+                    $.ajax({
+                        url: '/Adventures/Delete',
+                        type: 'POST',
+                        data: { id: advId },
+                        headers: {
+                            'Accept': 'application/json'  // Ensure JSON response
+                        },
+                        success: function (response) {
+                            if (response.success) {
+                                // Remove the user's row from the table
+                                $('#adv-row-' + advId).remove();
+
+                                // Show success message
+                                Swal.fire(
+                                    'Deleted!',
+                                    'The adventure has been deleted.',
+                                    'success'
+                                );
+                            } else {
+                                Swal.fire(
+                                    'Error!',
+                                    response.message || "An error occurred while deleting the adventure.",
+                                    'error'
+                                );
+                            }
+                        },
+                        error: function () {
+                            Swal.fire(
+                                'Error!',
+                                'An error occurred while processing the request.',
+                                'error'
+                            );
+                        }
+                    });
+                }
+            });
+        }
+        async function editAdventure(advId) {
+            window.location.href = `/Dash/EditAdventure?adventureId=${advId}`;
+        }
+
+
+    </script>
+
+
+</body>
+</html>

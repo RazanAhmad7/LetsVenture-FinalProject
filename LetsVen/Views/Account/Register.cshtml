@@ -1,0 +1,73 @@
+﻿@{
+    Layout = null;
+}
+@model LetsVen.Models.AppUser
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - LetsVenture</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="~/css/loginRegister.css">
+</head>
+
+<body>
+    <div class="container-fluid main-cont d-flex justify-content-center align-items-center">
+        <div class="row shadow-lg rounded-4 overflow-hidden hh">
+            <!-- Left Image Section (Swapped) -->
+            <div class="col-lg-5 image-section d-none d-lg-flex">
+                <h2>Start A New Journey!</h2>
+                <p class="fs-5">Already have an account?</p>
+                <form asp-action="Login" asp-controller="LoginRegister">
+                    <button type="submit" class="btn">Sign In</button>
+                </form>
+            </div>
+
+            <!-- Right Form Section (Swapped and added Name input) -->
+            <div class="col-lg-7 bg-white p-4 form-section">
+                <img src="/assets/logo.png" alt="LetsVenture Logo" width="85" class="mb-4" id="imgSignUp" />
+                <h1 class="mb-3 text-center">Sign up for LetsVenture</h1>
+
+                <div class="mb-1 d-flex justify-content-center social-icons">
+                    <a href="#" class="text-decoration-none"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-decoration-none"><i class="bi bi-google"></i></a>
+                    <a href="#" class="text-decoration-none"><i class="bi bi-linkedin"></i></a>
+                </div>
+
+                <p class="text-muted fw-bold text-center">or use your email account</p>
+
+                <form asp-action="Register" asp-controller="Account" method="post" class="w-100 d-flex flex-column justify-content-center align-items-center">
+
+                    <!-- Name input with validation message -->
+                    <div class="mb-3 w-75">
+                        <input type="text" asp-for="Name" class="form-control" placeholder="Name" required>
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+
+                    <!-- Email input with validation message -->
+                    <div class="mb-3 w-75">
+                        <input type="email" asp-for="Email" class="form-control" placeholder="Email" required>
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+
+                    <!-- Password input with validation message -->
+                    <div class="mb-3 w-75">
+                        <input type="password" asp-for="PasswordHash" class="form-control" placeholder="Password" required>
+                        <span asp-validation-for="PasswordHash" class="text-danger"></span>
+                    </div>
+
+                    <div class="d-flex justify-content-end mb-3">
+                        <a href="#" class="text-muted fw-bold">Forgot your password?</a>
+                    </div>
+
+                    <button type="submit" class="btn fw-bold">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

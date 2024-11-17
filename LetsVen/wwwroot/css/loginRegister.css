@@ -1,0 +1,174 @@
+﻿/* Basic reset and global styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh; /* Ensure the body takes the full height of the viewport */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa; /* Optional background color */
+}
+
+/* Main container styling */
+.main-cont {
+    width: 100%;
+    height: 100vh; /* Ensure the container takes the full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the content vertically and horizontally */
+}
+
+/* Image section background and styling */
+.image-section {
+    background-image: url('/assets/Petra.jpeg'); /* Replace with actual path */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* Social media icons styling */
+.social-icons a {
+    margin: 0 10px;
+    color: #FF9147;
+    font-size: 1.5rem;
+}
+
+/* Form section styling */
+.form-section {
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+    .form-section h1 {
+        color: #416D19;
+    }
+
+    .form-section div input {
+        padding: 0.5rem;
+        border: 2px solid #FF9147;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    /* Form button styling */
+    .form-section form button {
+        background-color: #FF6600;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 0.6rem;
+        font-weight: bold;
+        width: 35%;
+        cursor: pointer;
+    }
+
+        .form-section form button:hover {
+            background-color: #FF9147;
+            color: white;
+        }
+
+/* Image section button styling */
+.image-section button {
+    border: none;
+    border-radius: 5px;
+    padding: 0.6rem;
+    font-weight: bold;
+    width: 175px;
+    background-color: white;
+    color: #416D19;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+    .image-section button:hover {
+        background-color: #416D19;
+        color: white;
+    }
+
+.image-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 9rem;
+}
+
+.hh {
+    width: 75%;
+}
+
+#imgSignUp {
+    margin-left: 420px;
+}
+
+/* Responsive adjustments using media queries */
+@media (max-width: 768px) {
+    /* Form and image sections stack vertically on small screens */
+    .main-cont {
+        flex-direction: column;
+        height: auto; /* Let the height adapt to content */
+    }
+
+    /* Center logo on smaller screens */
+    .form-section img {
+        margin: 0 auto 1rem;
+        display: block;
+    }
+
+    /* Adjust image section styling for smaller screens */
+    .image-section {
+        height: 300px;
+        background-size: cover;
+        margin-bottom: 2rem;
+    }
+
+        /* Reduce the size of headings on smaller screens */
+        .image-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Button in the image section adjusted for small screens */
+        .image-section button {
+            width: 100%;
+            padding: 1rem;
+        }
+
+    /* Social media icons align to center */
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+/* Responsive adjustments for very small screens */
+@media (max-width: 576px) {
+
+    /* Center the logo and reduce the size */
+    .form-section img {
+        width: 70px;
+    }
+
+    /* Full width for input fields and buttons */
+    .form-section div input,
+    .form-section form button {
+        width: 100%;
+    }
+
+    .hh {
+        width: 100%;
+    }
+
+    #imgSignUp {
+        margin-left: 0;
+        margin: 0 auto;
+    }
+}

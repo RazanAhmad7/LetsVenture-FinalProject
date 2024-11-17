@@ -1,0 +1,845 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\wwwroot\\css\\bookingform.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\wwwroot\\css\\bookingform.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\views\\booking\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\views\\booking\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\wwwroot\\css\\loginregister.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\wwwroot\\css\\loginregister.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\views\\users\\groupprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\views\\users\\groupprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\viewmodels\\bookingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\viewmodels\\bookingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\controllers\\adventurescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\controllers\\adventurescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\views\\adventures\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\views\\adventures\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Data\\Migrations\\20241117161634_updateBooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LetsVen\\Data\\Migrations\\20241117161634_updateBooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\models\\adventureimages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\models\\adventureimages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Data\\Migrations\\20241117160638_updateBookings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LetsVen\\Data\\Migrations\\20241117160638_updateBookings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\views\\dash\\addadventure.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\views\\dash\\addadventure.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Orange\\New E-Commerce\\latayef\\Controllers\\ProductsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Data\\Migrations\\20241117123004_updatingFoodAvailability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LetsVen\\Data\\Migrations\\20241117123004_updatingFoodAvailability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\models\\adventures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\models\\adventures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\controllers\\dashcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\controllers\\dashcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\views\\dash\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\views\\dash\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\views\\adventures\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\views\\adventures\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\views\\joinus\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\views\\joinus\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\controllers\\joinuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\controllers\\joinuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\viewmodels\\upcomingadvgroupsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\viewmodels\\upcomingadvgroupsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Orange\\Final Project - LetsVenture\\Final Project - LetsVenture\\Views\\Account\\Register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\data\\migrations\\20241113164323_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\data\\migrations\\20241113164323_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\data\\migrations\\20241115144934_updatingtabelnames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\data\\migrations\\20241115144934_updatingtabelnames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\data\\migrations\\20241115142820_updatingroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\data\\migrations\\20241115142820_updatingroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\data\\migrations\\20241114084951_newupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\data\\migrations\\20241114084951_newupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|c:\\users\\user\\desktop\\.net final project\\letsven\\letsven\\data\\migrations\\20241116192617_updatingimages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C86363D0-B822-44CD-A606-A1B2B7FA71FD}|LetsVen\\LetsVen.csproj|solutionrelative:letsven\\data\\migrations\\20241116192617_updatingimages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Dash\\EditAdventure.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LetsVen\\Views\\Dash\\EditAdventure.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 294,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Adventures\\Details.cshtml",
+              "RelativeDocumentMoniker": "LetsVen\\Views\\Adventures\\Details.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Adventures\\Details.cshtml",
+              "RelativeToolTip": "LetsVen\\Views\\Adventures\\Details.cshtml",
+              "ViewState": "AgIAABkAAAAAAAAAAAAYwCMAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T17:19:18.427Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "LetsVen\\Controllers\\BookingController.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "LetsVen\\Controllers\\BookingController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAQwBkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T15:59:09.82Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Booking\\Index.cshtml",
+              "RelativeDocumentMoniker": "LetsVen\\Views\\Booking\\Index.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Booking\\Index.cshtml",
+              "RelativeToolTip": "LetsVen\\Views\\Booking\\Index.cshtml",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAUwB0AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T15:59:19.414Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "bookingForm.css",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\wwwroot\\css\\bookingForm.css",
+              "RelativeDocumentMoniker": "LetsVen\\wwwroot\\css\\bookingForm.css",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\wwwroot\\css\\bookingForm.css*",
+              "RelativeToolTip": "LetsVen\\wwwroot\\css\\bookingForm.css*",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-17T17:18:44.404Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "LetsVen\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "LetsVen\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T10:23:39.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "LetsVen\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "LetsVen\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAEIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-13T16:54:59.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Models\\AppUser.cs",
+              "RelativeDocumentMoniker": "LetsVen\\Models\\AppUser.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Models\\AppUser.cs",
+              "RelativeToolTip": "LetsVen\\Models\\AppUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T16:58:47.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "loginRegister.css",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\wwwroot\\css\\loginRegister.css",
+              "RelativeDocumentMoniker": "LetsVen\\wwwroot\\css\\loginRegister.css",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\wwwroot\\css\\loginRegister.css",
+              "RelativeToolTip": "LetsVen\\wwwroot\\css\\loginRegister.css",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAgwK4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-17T17:17:05.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "LetsVen\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "LetsVen\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T10:24:25.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "LetsVen\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "LetsVen\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T07:23:56.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "LetsVen\\Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "LetsVen\\Views\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAABwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-17T17:07:48.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "LetsVen\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "LetsVen\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T10:23:15.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "LetsVen\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "LetsVen\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T10:23:10.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GroupProfile.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Users\\GroupProfile.cshtml",
+              "RelativeDocumentMoniker": "LetsVen\\Views\\Users\\GroupProfile.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Users\\GroupProfile.cshtml",
+              "RelativeToolTip": "LetsVen\\Views\\Users\\GroupProfile.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T17:00:08.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "LetsVen\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "LetsVen\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T18:05:21.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "20241117161634_updateBooking.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Data\\Migrations\\20241117161634_updateBooking.cs",
+              "RelativeDocumentMoniker": "LetsVen\\Data\\Migrations\\20241117161634_updateBooking.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Data\\Migrations\\20241117161634_updateBooking.cs",
+              "RelativeToolTip": "LetsVen\\Data\\Migrations\\20241117161634_updateBooking.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T16:16:34.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BookingModel.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\ViewModels\\BookingModel.cs",
+              "RelativeDocumentMoniker": "LetsVen\\ViewModels\\BookingModel.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\ViewModels\\BookingModel.cs",
+              "RelativeToolTip": "LetsVen\\ViewModels\\BookingModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T16:20:29.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20241117160638_updateBookings.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Data\\Migrations\\20241117160638_updateBookings.cs",
+              "RelativeDocumentMoniker": "LetsVen\\Data\\Migrations\\20241117160638_updateBookings.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Data\\Migrations\\20241117160638_updateBookings.cs",
+              "RelativeToolTip": "LetsVen\\Data\\Migrations\\20241117160638_updateBookings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T16:06:38.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AdventuresController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Controllers\\AdventuresController.cs",
+              "RelativeDocumentMoniker": "LetsVen\\Controllers\\AdventuresController.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Controllers\\AdventuresController.cs",
+              "RelativeToolTip": "LetsVen\\Controllers\\AdventuresController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAUwBIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T08:56:32.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Models\\Booking.cs",
+              "RelativeDocumentMoniker": "LetsVen\\Models\\Booking.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Models\\Booking.cs",
+              "RelativeToolTip": "LetsVen\\Models\\Booking.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwBAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T17:10:34.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AdventureImages.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Models\\AdventureImages.cs",
+              "RelativeDocumentMoniker": "LetsVen\\Models\\AdventureImages.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Models\\AdventureImages.cs",
+              "RelativeToolTip": "LetsVen\\Models\\AdventureImages.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAwAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T17:12:11.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "DashController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Controllers\\DashController.cs",
+              "RelativeDocumentMoniker": "LetsVen\\Controllers\\DashController.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Controllers\\DashController.cs",
+              "RelativeToolTip": "LetsVen\\Controllers\\DashController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowDAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T15:52:27.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "LetsVen\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "LetsVen\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAHoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T16:25:35.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "EditAdventure.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Dash\\EditAdventure.cshtml",
+              "RelativeDocumentMoniker": "LetsVen\\Views\\Dash\\EditAdventure.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Dash\\EditAdventure.cshtml",
+              "RelativeToolTip": "LetsVen\\Views\\Dash\\EditAdventure.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAKMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T10:04:55.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AddAdventure.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Dash\\AddAdventure.cshtml",
+              "RelativeDocumentMoniker": "LetsVen\\Views\\Dash\\AddAdventure.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Dash\\AddAdventure.cshtml",
+              "RelativeToolTip": "LetsVen\\Views\\Dash\\AddAdventure.cshtml",
+              "ViewState": "AgIAAOgAAAAAAAAAAAAwwCwBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-16T10:02:23.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Orange\\New E-Commerce\\latayef\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Orange\\New E-Commerce\\latayef\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Orange\\New E-Commerce\\latayef\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Orange\\New E-Commerce\\latayef\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T15:42:47.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "20241117123004_updatingFoodAvailability.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Data\\Migrations\\20241117123004_updatingFoodAvailability.cs",
+              "RelativeDocumentMoniker": "LetsVen\\Data\\Migrations\\20241117123004_updatingFoodAvailability.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Data\\Migrations\\20241117123004_updatingFoodAvailability.cs",
+              "RelativeToolTip": "LetsVen\\Data\\Migrations\\20241117123004_updatingFoodAvailability.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T12:30:05.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Adventures.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Models\\Adventures.cs",
+              "RelativeDocumentMoniker": "LetsVen\\Models\\Adventures.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Models\\Adventures.cs",
+              "RelativeToolTip": "LetsVen\\Models\\Adventures.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T16:59:34.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Adventures\\Index.cshtml",
+              "RelativeDocumentMoniker": "LetsVen\\Views\\Adventures\\Index.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Adventures\\Index.cshtml",
+              "RelativeToolTip": "LetsVen\\Views\\Adventures\\Index.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAGMAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T15:27:38.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Dash\\Index.cshtml",
+              "RelativeDocumentMoniker": "LetsVen\\Views\\Dash\\Index.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Dash\\Index.cshtml",
+              "RelativeToolTip": "LetsVen\\Views\\Dash\\Index.cshtml",
+              "ViewState": "AgIAALcAAAAAAAAAAAAAAMgAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T17:24:52.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "20241116192617_updatingImages.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Data\\Migrations\\20241116192617_updatingImages.cs",
+              "RelativeDocumentMoniker": "LetsVen\\Data\\Migrations\\20241116192617_updatingImages.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Data\\Migrations\\20241116192617_updatingImages.cs",
+              "RelativeToolTip": "LetsVen\\Data\\Migrations\\20241116192617_updatingImages.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T19:26:17.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Program.cs",
+              "RelativeDocumentMoniker": "LetsVen\\Program.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Program.cs",
+              "RelativeToolTip": "LetsVen\\Program.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAqwCwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T16:48:08.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "LetsVen\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "LetsVen\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAJkAAAAAAAAAAAArwMYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T17:19:35.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "LetsVen\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "LetsVen\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T16:57:39.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "LetsVen\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "LetsVen\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAqwCAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T09:34:41.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "AboutUs.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Home\\AboutUs.cshtml",
+              "RelativeDocumentMoniker": "LetsVen\\Views\\Home\\AboutUs.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Home\\AboutUs.cshtml",
+              "RelativeToolTip": "LetsVen\\Views\\Home\\AboutUs.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T17:26:58.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "JoinUsController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Controllers\\JoinUsController.cs",
+              "RelativeDocumentMoniker": "LetsVen\\Controllers\\JoinUsController.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Controllers\\JoinUsController.cs",
+              "RelativeToolTip": "LetsVen\\Controllers\\JoinUsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T16:55:54.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\JoinUs\\Index.cshtml",
+              "RelativeDocumentMoniker": "LetsVen\\Views\\JoinUs\\Index.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\JoinUs\\Index.cshtml",
+              "RelativeToolTip": "LetsVen\\Views\\JoinUs\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T16:56:25.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "upComingAdvGroupsModel.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\ViewModels\\upComingAdvGroupsModel.cs",
+              "RelativeDocumentMoniker": "LetsVen\\ViewModels\\upComingAdvGroupsModel.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\ViewModels\\upComingAdvGroupsModel.cs",
+              "RelativeToolTip": "LetsVen\\ViewModels\\upComingAdvGroupsModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T16:24:52.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Data\\SeedData.cs",
+              "RelativeDocumentMoniker": "LetsVen\\Data\\SeedData.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Data\\SeedData.cs",
+              "RelativeToolTip": "LetsVen\\Data\\SeedData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwA4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T17:34:02.974Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "20241115144934_updatingTabelNames.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Data\\Migrations\\20241115144934_updatingTabelNames.cs",
+              "RelativeDocumentMoniker": "LetsVen\\Data\\Migrations\\20241115144934_updatingTabelNames.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Data\\Migrations\\20241115144934_updatingTabelNames.cs",
+              "RelativeToolTip": "LetsVen\\Data\\Migrations\\20241115144934_updatingTabelNames.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T14:49:34.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "LetsVen\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "LetsVen\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAswBIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T16:41:23.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "20241115142820_updatingRoles.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Data\\Migrations\\20241115142820_updatingRoles.cs",
+              "RelativeDocumentMoniker": "LetsVen\\Data\\Migrations\\20241115142820_updatingRoles.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Data\\Migrations\\20241115142820_updatingRoles.cs",
+              "RelativeToolTip": "LetsVen\\Data\\Migrations\\20241115142820_updatingRoles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T14:28:20.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "LetsVen\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "LetsVen\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T10:24:30.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "LetsVen\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "LetsVen\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T10:23:00.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "20241114084951_newUpdate.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Data\\Migrations\\20241114084951_newUpdate.cs",
+              "RelativeDocumentMoniker": "LetsVen\\Data\\Migrations\\20241114084951_newUpdate.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Data\\Migrations\\20241114084951_newUpdate.cs",
+              "RelativeToolTip": "LetsVen\\Data\\Migrations\\20241114084951_newUpdate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T08:49:51.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\appsettings.json",
+              "RelativeDocumentMoniker": "LetsVen\\appsettings.json",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\appsettings.json",
+              "RelativeToolTip": "LetsVen\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-13T16:42:44.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Orange\\Final Project - LetsVenture\\Final Project - LetsVenture\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Orange\\Final Project - LetsVenture\\Final Project - LetsVenture\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Orange\\Final Project - LetsVenture\\Final Project - LetsVenture\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Orange\\Final Project - LetsVenture\\Final Project - LetsVenture\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAIBZwBAAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-13T16:55:12.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "20241113164323_first.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Data\\Migrations\\20241113164323_first.cs",
+              "RelativeDocumentMoniker": "LetsVen\\Data\\Migrations\\20241113164323_first.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\.net final project\\LetsVen\\LetsVen\\Data\\Migrations\\20241113164323_first.cs",
+              "RelativeToolTip": "LetsVen\\Data\\Migrations\\20241113164323_first.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T16:43:23.743Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 106,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - LetVenture_Project</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/HomePge.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/LetVenture_Project.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm py-1 fixed-top bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand custom-navbar" href="@Url.Action("Index", "Home")">
+                    <img src="/assets/logo.png" alt="Logo" width="85" />
+                    LetsVenture
+                </a>
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto p-2 gap-lg-5" style="backdrop-filter: blur(5px);">
+                        <li class="nav-item">
+                            <a class="nav-link main-color fw-semibold fs-6" href="@Url.Action("Index", "Home")">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link main-color fw-semibold fs-6" href="@Url.Action("Index", "Adventures")">Adventures</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link main-color fw-semibold fs-6" href="@Url.Action("AboutUs", "Home")">About Us</a>
+                        </li>
+                    </ul>
+                   
+
+                    <partial name="_LoginPartial" />
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+
+
+    <!-- Footer Section -->
+    <div class="container footer-cont">
+        <footer class="d-flex flex-row justify-content-center align-items-center container-fluid p-0 m-0">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <img class="my-5" src="/assets/footerLogo.png" alt="" width="130">
+                <div>
+                    <p>Sign up for our newsletter to stay updated on the latest adventures and special offers!</p>
+                    <form action="">
+                        <input type="email" name="email" placeholder="Email : example@gmail.com">
+                    </form>
+                </div>
+            </div>
+            <div class="m-5">
+                <p class="fw-bold">letsVenture is your gateway to unforgettable adventures across Jordan...</p>
+                <div class="d-flex flex-row justify-content-between flex-wrap">
+                    <div class="quick-links">
+                        <p>Quick Links</p>
+                        <div class="links d-flex flex-column">
+                            <a href="@Url.Action("Index", "Home")">Home</a>
+                            <a href="@Url.Action("Index", "Adventures")">Adventures</a>
+                            <a href="@Url.Action("AboutUs", "Home")">About Us</a>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <p>Contact Information</p>
+                        <div class="info d-flex flex-column">
+                            <a href="tel:+12345678901">Phone: +1 234 567 8901</a>
+                            <a href="mailto:info@example.com">Email: info@example.com</a>
+                            <p>Address: 123 Main St, City, State, Zip</p>
+                        </div>
+                    </div>
+                    <div class="follow-us">
+                        <p>Follow Us</p>
+                        <div class="d-flex flex-column socials">
+                            <div><i class="bi bi-facebook me-2"></i> <a href="#">Facebook</a></div>
+                            <div><i class="bi bi-twitter me-2"></i> <a href="#">Twitter</a></div>
+                            <div><i class="bi bi-instagram me-2"></i> <a href="#">Instagram</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
